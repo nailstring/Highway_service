@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routes>
+
+    <vType id="highway_vehicle" length="5" maxSpeed="25"/>
+    <vType id="branch_vehicle" length="5" maxSpeed="10"/>
+    <vType id="highway_vehicle1" length="5" maxSpeed="25"/>
+
+    <flow id="highway_flow" color="0,1,0" begin="0" end="7200" vehsPerHour="500" type="highway_vehicle" departLane="1" departSpeed="max">
+        <route edges="E2 E4"/>
+    </flow>
+
+    <flow id="highway_flow1" color="1,0,0" begin="0" end="7200" vehsPerHour="200" type="highway_vehicle1" departLane="1" departSpeed="max">
+        <route edges="E2 E4"/>
+    </flow>
+
+    <flow id="highway_flow2" color="0,1,0" begin="0" end="7200" vehsPerHour="400" type="highway_vehicle" departLane="2" departSpeed="max">
+        <route edges="E2 E4"/>
+    </flow>
+
+    <flow id="highway_flow3" color="1,0,0" begin="0" end="7200" vehsPerHour="380" type="highway_vehicle1" departLane="2" departSpeed="max">
+        <route edges="E2 E4"/>
+    </flow>
+
+    <flow id="highway_flow4" color="1,0,0" begin="0" end="7200" vehsPerHour="100" type="highway_vehicle1" departLane="0" departSpeed="max">
+        <route edges="E2 E4"/>
+    </flow>
+
+    <flow id="highway_flow5" color="0,1,0" begin="0" end="7200" vehsPerHour="75" type="highway_vehicle1" departLane="0" departSpeed="max">
+        <route edges="E2 E4"/>
+    </flow>
+
+    <flow id="branch_flow" color="1,1,0" begin="0" end="7200" vehsPerHour="50" type="branch_vehicle" departLane="random" departSpeed="max">
+        <route edges="branch E4"/>
+
+    </flow>
+    <flow id="branch_flow1" color="0,1,0" begin="0" end="7200" vehsPerHour="70" type="branch_vehicle" departLane="random" departSpeed="max">
+        <route edges="branch E4"/>
+
+    </flow>
+
+</routes>

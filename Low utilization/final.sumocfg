@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+    <input>
+        <net-file value="mynet.net.xml"/>  
+        <route-files value="simurou.rou.xml"/> 
+    </input>
+
+    <time>
+        <begin value="0"/>
+        <end value="7200"/>
+    </time>
+
+    <report>
+        <no-step-log value="true"/>
+        <no-warnings value="true"/>
+    </report>
+
+
+    <additional>
+    <laneAreaDetector id="detector_E4" lane="E4_0" pos="100" endPos="500" freq="10" file="detector_E4.xml"/>
+    </additional>
+
+
+
+</configuration>
